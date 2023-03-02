@@ -7,7 +7,7 @@ def is_ai_generated(api_key, paragraph):
     response = openai.Completion.create(
         engine="text-davinci-003",
         prompt=prompt,
-        temperature=0,
+        temperature=2,
         max_tokens=40,
         n=1,
         stop=None,
